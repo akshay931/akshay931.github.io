@@ -1,8 +1,9 @@
-- 👋 Hi, I’m Akshay
-- 👀 I’m interested in Coding
-- 🌱 I’m currently learning Advanced Data structure and algorithm
+# Hi, I'm Akshay 👋
 
-<!---
-akshay931/akshay931 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+Backend Engineer passionate about building scalable systems with **Go**, **Node.js**, and **Distributed Systems**.
+
+- 🚀 Learning something new every day
+- 💡 Building projects that solve real problems
+- ⚡ Interested in System Design, Kafka & Kubernetes
+
+> *"Consistency compounds. Keep building."* 🚀
