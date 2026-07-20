@@ -4,6 +4,6 @@ Backend Engineer passionate about building scalable systems with **Go**, **Node.
 
 - 🚀 Learning something new every day
 - 💡 Building projects that solve real problems
-- ⚡ Interested in System Design, Kafka & Kubernetes
+- ⚡ Interested in System Design
 
 > *"Consistency compounds. Keep building."* 🚀
