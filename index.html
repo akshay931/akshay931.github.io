@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#020b18" />
+  <meta http-equiv="refresh" content="2;url=https://oxyide.com" />
+
+  <link rel="canonical" href="https://oxyide.com" />
+  <title>Redirecting to Oxyide</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-family: Inter, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      color: #fff;
+      background:
+        radial-gradient(ellipse at 50% 45%, #062342 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 100%, #00346a 0%, transparent 45%),
+        #020b18;
+    }
+
+    .background {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image: radial-gradient(#12629b 1px, transparent 1px);
+      background-size: 25px 25px;
+      opacity: 0.22;
+      mask-image: linear-gradient(to bottom, black, transparent 85%);
+    }
+
+    .rings {
+      position: absolute;
+      width: min(85vw, 650px);
+      aspect-ratio: 1;
+      border: 1px solid rgba(0, 153, 255, 0.12);
+      border-radius: 50%;
+      box-shadow: 0 0 0 70px rgba(0, 153, 255, 0.025),
+                  0 0 0 140px rgba(0, 153, 255, 0.02);
+      pointer-events: none;
+    }
+
+    .container {
+      position: relative;
+      z-index: 2;
+      width: min(90%, 500px);
+      text-align: center;
+      padding: 40px 20px;
+      animation: appear 0.8s ease-out;
+    }
+
+    .logo {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+    .logo span {
+      color: #0abaff;
+      margin-right: 5px;
+    }
+
+    h1 {
+      font-size: 38px;
+      letter-spacing: -1.5px;
+      margin-bottom: 32px;
+    }
+
+    .message {
+      font-size: clamp(22px, 5vw, 30px);
+      font-weight: 650;
+      letter-spacing: -0.8px;
+      margin-bottom: 12px;
+    }
+
+    .message span {
+      color: #13c6f5;
+    }
+
+    .description {
+      color: #94a8bc;
+      font-size: 15px;
+      line-height: 1.7;
+    }
+
+    .loader {
+      width: 48px;
+      height: 48px;
+      margin: 40px auto;
+      border: 4px solid rgba(0, 163, 255, 0.15);
+      border-top-color: #08baff;
+      border-right-color: #08baff;
+      border-radius: 50%;
+      animation: spin 0.85s linear infinite;
+      box-shadow: 0 0 20px rgba(0, 163, 255, 0.15);
+    }
+
+    .redirect-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 14px 24px;
+      border: 1px solid rgba(0, 174, 255, 0.4);
+      border-radius: 14px;
+      color: white;
+      text-decoration: none;
+      background: rgba(0, 35, 65, 0.5);
+      font-size: 15px;
+      font-weight: 600;
+      transition: 0.25s ease;
+    }
+
+    .redirect-link:hover {
+      background: rgba(0, 153, 255, 0.15);
+      border-color: #08baff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(0, 153, 255, 0.15);
+    }
+
+    .arrow {
+      color: #08baff;
+      font-size: 20px;
+    }
+
+    .footer {
+      margin-top: 55px;
+      color: #526a80;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 32px; }
+      .container { padding: 25px 10px; }
+      .redirect-link { padding: 13px 18px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background"></div>
+  <div class="rings"></div>
+
+  <main class="container">
+    <div class="logo">
+  <img src="./assets/oxyide-logo.svg" alt="Oxyide Logo">
+</div>
+
+    <h1>Oxyide</h1>
+
+    <p class="message">
+      Redirecting to <span>Oxyide...</span>
+    </p>
+
+    <p class="description">
+      You will be redirected to oxyide.com in a moment.
+    </p>
+
+    <div class="loader" aria-label="Loading"></div>
+
+    <a class="redirect-link" href="https://oxyide.com">
+      <span>↗</span>
+      Go to oxyide.com now
+      <span class="arrow">→</span>
+    </a>
+
+    <p class="footer">
+      POWERED BY OXYIDE · BUILT FOR DEVELOPERS
+    </p>
+  </main>
+
+  <script>
+    window.setTimeout(() => {
+      window.location.replace("https://oxyide.com");
+    }, 2000);
+  </script>
+</body>
+</html>
